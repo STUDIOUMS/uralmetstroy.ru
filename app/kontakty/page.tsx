@@ -2,6 +2,8 @@
 import type { Metadata } from 'next';
 import { SITE } from '@/lib/data';
 import Breadcrumb from '@/components/Breadcrumb';
+import OrderForm from '@/components/OrderForm';
+import RelatedLinks from '@/components/RelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Контакты УралМетСтрой — Нижний Тагил | Оградки на кладбище',
@@ -57,7 +59,7 @@ export default function KontaktyPage() {
       <Breadcrumb items={BREADCRUMB_ITEMS} />
 
       {/* PAGE HERO */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/img/slide2.jpg')" }}>
         <div className="container">
           <h1>Контакты</h1>
           <p className="hero-desc">
@@ -168,6 +170,27 @@ export default function KontaktyPage() {
         .map-address { font-size: 0.875rem; color: var(--text-light); text-align: center; }
         @media (max-width: 800px) { .contacts-layout { grid-template-columns: 1fr; } }
       `}</style>
+
+      {/* ORDER FORM */}
+      <section className="section bg-light" id="order">
+        <div className="container">
+          <div className="section-header">
+            <h2>Оставить заявку</h2>
+            <p>Перезвоним в течение 15 минут и ответим на все вопросы</p>
+          </div>
+          <div style={{ maxWidth: '640px', margin: '0 auto' }}>
+            <OrderForm title="" />
+          </div>
+        </div>
+      </section>
+
+      <RelatedLinks links={[
+        { href: '/catalog',          label: 'Каталог оградок' },
+        { href: '/cena-ogradki',     label: 'Цены' },
+        { href: '/dostavka-i-oplata', label: 'Доставка и оплата' },
+        { href: '/garantii',         label: 'Гарантии' },
+        { href: '/o-kompanii',       label: 'О компании' },
+      ]}/>
     </>
   );
 }
