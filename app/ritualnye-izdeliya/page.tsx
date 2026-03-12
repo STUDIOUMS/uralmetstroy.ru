@@ -160,7 +160,7 @@ export default function RitualnyeIzdeliyaPage() {
       <Breadcrumb items={BREADCRUMB_ITEMS} />
 
       {/* HERO */}
-      <section className="page-hero" style={{ backgroundImage: "url('/img/ogrady/ograda-klassicheskaya-1.jpg')" }}>
+      <section className="page-hero" style={{ backgroundImage: "url('/img/slide1.jpg')" }}>
         <div className="container">
           <h1>Ритуальные изделия — полный каталог</h1>
           <p className="hero-desc">
