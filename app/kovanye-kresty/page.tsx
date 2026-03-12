@@ -52,7 +52,7 @@ export default function KovanyeKrestyPage() {
     <>
       <Breadcrumb items={[{ label: 'Главная', href: '/' }, { label: 'Каталог', href: '/ritualnye-izdeliya' }, { label: 'Кованые кресты' }]}/>
 
-      <section className="page-hero" style={{ backgroundImage: "url('/img/ritualnye-izdeliya.jpg')" }}>
+      <section className="page-hero" style={{ backgroundImage: "url('/img/ogrady/ograda-klassicheskaya-1.jpg')" }}>
         <div className="container">
           <h1>Кованые кресты на могилу</h1>
           <p className="hero-desc">10 моделей: православные, католические, с распятием, мемориальные. Собственная кузница.</p>

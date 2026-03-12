@@ -21,7 +21,7 @@ export default function BlogPage() {
     <>
       <Breadcrumb items={[{ label: 'Главная', href: '/' }, { label: 'Блог' }]}/>
 
-      <section className="page-hero" style={{ backgroundImage: "url('/img/ritualnye-izdeliya.jpg')" }}>
+      <section className="page-hero" style={{ backgroundImage: "url('/img/ogrady/ograda-klassicheskaya-1.jpg')" }}>
         <div className="container">
           <h1>Блог УралМетСтрой</h1>
           <p className="hero-desc">Полезные статьи о выборе, установке и уходе за оградками. Пишем честно — как производители.</p>
