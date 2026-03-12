@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: `${SITE.name} — кованые оградки на могилу, ${SITE.city}`,
   description: `Производство кованых и сварных оградок, столиков, крестов в ${SITE.city}. Собственное производство с ${SITE.workingFrom} года. Цены от 2 000 ₽/м.пог. Установка под ключ. ${SITE.phone}`,
   alternates: { canonical: '/' },
+  openGraph: {
+    title:       `${SITE.name} — кованые оградки на могилу, ${SITE.city}`,
+    description: `Производство кованых и сварных оградок, столиков, крестов в ${SITE.city}. С ${SITE.workingFrom} года. Цены от 2 000 ₽/м.пог. Установка под ключ.`,
+    url:         '/',
+    images:      [{ url: '/img/og-default.jpg', width: 1200, height: 630, alt: `${SITE.name} — кованые оградки, ${SITE.city}` }],
+  },
 };
 
 const HOMEPAGE_SCHEMA = {

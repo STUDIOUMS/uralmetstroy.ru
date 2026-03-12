@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: 'Демонтаж оградок в Нижнем Тагиле — от 1 000 ₽ | УралМетСтрой',
   description: `Демонтаж старых оградок на кладбище в ${SITE.city}. Аккуратная разборка, вывоз металлолома. При заказе новой оградки — демонтаж бесплатно. Цена от 1 000 ₽. Звоните: ${SITE.phone}`,
   alternates: { canonical: '/demontazh-ogradki' },
+  openGraph: {
+    title:       'Демонтаж оградок в Нижнем Тагиле — от 1 000 ₽ | УралМетСтрой',
+    description: `Демонтаж старых оградок на кладбище в ${SITE.city}. Аккуратная разборка, вывоз металлолома. При заказе новой оградки — демонтаж бесплатно.`,
+    url:         '/demontazh-ogradki',
+    images:      [{ url: '/img/og-default.jpg', width: 1200, height: 630, alt: 'Демонтаж оградок — УралМетСтрой' }],
+  },
 };
 
 const SERVICE_SCHEMA = {

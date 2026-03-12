@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   description:
     'Гарантия на кованые оградки 5 лет, сварные 3 года, покраску 5 лет. Официальный гарантийный талон.',
   alternates: { canonical: '/garantii' },
+  openGraph: {
+    title:       'Гарантии на оградки и ритуальные изделия — УралМетСтрой',
+    description: 'Гарантия на кованые оградки 5 лет, сварные 3 года, покраску 5 лет. Официальный гарантийный талон. Нижний Тагил.',
+    url:         '/garantii',
+    images:      [{ url: '/img/og-default.jpg', width: 1200, height: 630, alt: 'Гарантии УралМетСтрой' }],
+  },
 };
 
 const GUARANTEE_SCHEMA = {

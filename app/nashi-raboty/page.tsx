@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: `Наши работы — фото оградок | ${SITE.name}`,
   description: `Фотогалерея выполненных работ УралМетСтрой: кованые и сварные оградки, комплекты, кресты, цветники. Установлено более 500 изделий на кладбищах ${SITE.city}.`,
   alternates: { canonical: '/nashi-raboty' },
+  openGraph: {
+    title:       `Наши работы — фото оградок | ${SITE.name}`,
+    description: `Фотогалерея выполненных работ: кованые и сварные оградки, комплекты, кресты, цветники. Более 500 изделий на кладбищах ${SITE.city}.`,
+    url:         '/nashi-raboty',
+    images:      [{ url: '/img/ogrady.jpg', width: 1200, height: 800, alt: 'Наши работы — кованые оградки УралМетСтрой' }],
+  },
 };
 
 const GALLERY = [

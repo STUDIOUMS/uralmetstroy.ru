@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: 'Металлические памятники в Нижнем Тагиле — 10 моделей | УралМетСтрой',
   description: 'Металлические памятники на могилу с лазерной гравировкой. 10 моделей от 12 000 ₽. Установка за 1 день. Нижний Тагил.',
   alternates: { canonical: `${SITE.url}/metallicheskie-pamyatniki` },
+  openGraph: {
+    title:       'Металлические памятники в Нижнем Тагиле — 10 моделей | УралМетСтрой',
+    description: 'Металлические памятники на могилу с лазерной гравировкой. 10 моделей от 12 000 ₽. Установка за 1 день.',
+    url:         '/metallicheskie-pamyatniki',
+    images:      [{ url: '/img/pamyatnik-1.jpg', width: 1200, height: 800, alt: 'Металлические памятники — УралМетСтрой' }],
+  },
 };
 
 const FAQ_ITEMS = [

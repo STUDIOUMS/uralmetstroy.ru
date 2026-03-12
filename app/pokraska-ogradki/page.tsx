@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: 'Покраска оградок в Нижнем Тагиле — от 1 500 ₽ | УралМетСтрой',
   description: `Профессиональная покраска оградок на кладбище в ${SITE.city}. Антикоррозийная грунтовка, любой цвет RAL, выезд на кладбище. Цена от 1 500 ₽. Звоните: ${SITE.phone}`,
   alternates: { canonical: '/pokraska-ogradki' },
+  openGraph: {
+    title:       'Покраска оградок в Нижнем Тагиле — от 1 500 ₽ | УралМетСтрой',
+    description: `Профессиональная покраска оградок на кладбище в ${SITE.city}. Антикоррозийная грунтовка, любой цвет RAL, выезд на кладбище. Цена от 1 500 ₽.`,
+    url:         '/pokraska-ogradki',
+    images:      [{ url: '/img/og-default.jpg', width: 1200, height: 630, alt: 'Покраска оградок — УралМетСтрой' }],
+  },
 };
 
 const SERVICE_SCHEMA = {

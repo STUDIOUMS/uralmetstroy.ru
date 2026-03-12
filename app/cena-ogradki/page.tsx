@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: 'Цены на оградки в Нижнем Тагиле 2026 | УралМетСтрой — от 1 400 ₽/м.пог.',
   description: `Актуальные цены на кованые и сварные оградки, комплекты и услуги в ${SITE.city} 2026. Кованые от 2 500 ₽/м.пог., сварные от 1 400 ₽/м.пог. ${SITE.phone}`,
   alternates: { canonical: '/cena-ogradki' },
+  openGraph: {
+    title:       'Цены на оградки в Нижнем Тагиле 2026 | УралМетСтрой',
+    description: `Актуальные цены на кованые и сварные оградки в ${SITE.city} 2026. Кованые от 2 500 ₽/м.пог., сварные от 1 400 ₽/м.пог.`,
+    url:         '/cena-ogradki',
+    images:      [{ url: '/img/ogrady.jpg', width: 1200, height: 800, alt: 'Цены на оградки — УралМетСтрой' }],
+  },
 };
 
 const SCHEMA = {

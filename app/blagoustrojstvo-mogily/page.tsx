@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: 'Благоустройство могил в Нижнем Тагиле — от 3 000 ₽ | УралМетСтрой',
   description: `Благоустройство и уход за могилами в ${SITE.city}. Уборка, выравнивание, насыпка щебня, посадка растений, покраска оградки. От 3 000 ₽. Звоните: ${SITE.phone}`,
   alternates: { canonical: '/blagoustrojstvo-mogily' },
+  openGraph: {
+    title:       'Благоустройство могил в Нижнем Тагиле — от 3 000 ₽ | УралМетСтрой',
+    description: `Благоустройство и уход за могилами в ${SITE.city}. Уборка, выравнивание, насыпка щебня, посадка растений, покраска оградки. От 3 000 ₽.`,
+    url:         '/blagoustrojstvo-mogily',
+    images:      [{ url: '/img/og-default.jpg', width: 1200, height: 630, alt: 'Благоустройство могил — УралМетСтрой' }],
+  },
 };
 
 const SERVICE_SCHEMA = {

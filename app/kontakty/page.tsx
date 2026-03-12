@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: 'Контакты УралМетСтрой — Нижний Тагил | Оградки на кладбище',
   description: `${SITE.name} в ${SITE.city}: ${SITE.phone}, ${SITE.address}. ${SITE.hours.weekdays}, ${SITE.hours.saturday}. Оградки, установка, ремонт, покраска.`,
   alternates: { canonical: '/kontakty' },
+  openGraph: {
+    title:       'Контакты УралМетСтрой — Нижний Тагил',
+    description: `${SITE.name} в ${SITE.city}: ${SITE.phone}, ${SITE.address}. Пн–Пт 9:00–18:00, Сб 10:00–16:00.`,
+    url:         '/kontakty',
+    images:      [{ url: '/img/og-default.jpg', width: 1200, height: 630, alt: 'Контакты УралМетСтрой' }],
+  },
 };
 
 const LOCAL_BUSINESS_SCHEMA = {

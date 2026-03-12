@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   description:
     'Кованые и сварные оградки, кресты, цветники, памятники, столики, скамейки. Собственное производство. Нижний Тагил.',
   alternates: { canonical: '/ritualnye-izdeliya' },
+  openGraph: {
+    title:       'Ритуальные изделия в Нижнем Тагиле — полный каталог | УралМетСтрой',
+    description: 'Кованые и сварные оградки, кресты, цветники, памятники, столики, скамейки. Собственное производство с 2010 года.',
+    url:         '/ritualnye-izdeliya',
+    images:      [{ url: '/img/ritualnye-izdeliya.jpg', width: 1200, height: 800, alt: 'Ритуальные изделия — УралМетСтрой' }],
+  },
 };
 
 const ITEM_LIST_SCHEMA = {

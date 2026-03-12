@@ -15,7 +15,13 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description: `Производство кованых и сварных оградок, столиков, крестов для кладбища в ${SITE.city}. Собственное производство с 2010 года. Гарантия 3–5 лет. ${SITE.phone}`,
-  keywords: ['оградки на могилу', 'нижний тагил', 'кованые оградки', 'ритуальные изделия', 'установка оградок'],
+  keywords: [
+    'оградки на могилу', 'кованые оградки', 'сварные оградки', 'ритуальные изделия',
+    'нижний тагил', 'установка оградок', 'оградка на кладбище', 'металлические оградки',
+    'кованые кресты', 'цветники для могилы', 'металлические памятники', 'столик на кладбище',
+    'купить оградку нижний тагил', 'производство оградок', 'ограждение для могилы',
+    'оградки свердловская область', 'ритуальные изделия нижний тагил',
+  ],
   authors:  [{ name: SITE.name, url: SITE.url }],
   creator:  SITE.name,
   robots: {
@@ -29,11 +35,12 @@ export const metadata: Metadata = {
     siteName:    SITE.name,
     title:       `${SITE.name} — кованые ритуальные изделия`,
     description: `Производство оградок, столиков, крестов. ${SITE.city}, с 2010 года.`,
-    images: [{ url: '/img/og-default.jpg', width: 1200, height: 630, alt: SITE.name }],
+    images: [{ url: '/img/og-default.jpg', width: 1200, height: 630, alt: `${SITE.name} — кованые оградки, ${SITE.city}` }],
   },
   twitter: {
-    card:  'summary_large_image',
-    title: `${SITE.name} — кованые ритуальные изделия`,
+    card:        'summary_large_image',
+    title:       `${SITE.name} — кованые ритуальные изделия`,
+    description: `Производство оградок, столиков, крестов. ${SITE.city}, с 2010 года.`,
   },
   alternates: {
     canonical: SITE.url,

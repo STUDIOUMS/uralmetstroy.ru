@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: 'Доставка и оплата — УралМетСтрой, Нижний Тагил',
   description: 'Бесплатная доставка по Нижнему Тагилу. Оплата наличными, картой, безнал. Рассрочка от 20 000 ₽.',
   alternates: { canonical: '/dostavka-i-oplata' },
+  openGraph: {
+    title:       'Доставка и оплата — УралМетСтрой, Нижний Тагил',
+    description: 'Бесплатная доставка по Нижнему Тагилу при заказе от 5 000 ₽. Оплата наличными, картой, безнал. Рассрочка от 20 000 ₽.',
+    url:         '/dostavka-i-oplata',
+    images:      [{ url: '/img/og-default.jpg', width: 1200, height: 630, alt: 'Доставка и оплата — УралМетСтрой' }],
+  },
 };
 
 const BREADCRUMB_ITEMS = [

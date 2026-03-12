@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: 'Ремонт оградок в Нижнем Тагиле — от 800 ₽ | УралМетСтрой',
   description: `Профессиональный ремонт оградок на кладбище в ${SITE.city}. Сварка, выравнивание, замена секций. Выезд в день обращения. Цена от 800 ₽. Звоните: ${SITE.phone}`,
   alternates: { canonical: '/remont-ogradki' },
+  openGraph: {
+    title:       'Ремонт оградок в Нижнем Тагиле — от 800 ₽ | УралМетСтрой',
+    description: `Профессиональный ремонт оградок на кладбище в ${SITE.city}. Сварка, выравнивание, замена секций. Выезд в день обращения.`,
+    url:         '/remont-ogradki',
+    images:      [{ url: '/img/og-default.jpg', width: 1200, height: 630, alt: 'Ремонт оградок — УралМетСтрой' }],
+  },
 };
 
 const SERVICE_SCHEMA = {

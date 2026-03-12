@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: 'Столики и скамейки для кладбища в Нижнем Тагиле | УралМетСтрой',
   description: `Металлические столики, скамейки и лавочки для могилы. Кованые и сварные. От 3 500 ₽. Установка под ключ в ${SITE.city}.`,
   alternates: { canonical: `${SITE.url}/stolik-i-skameyka` },
+  openGraph: {
+    title:       'Столики и скамейки для кладбища в Нижнем Тагиле | УралМетСтрой',
+    description: `Металлические столики, скамейки и лавочки для могилы. Кованые и сварные. От 3 500 ₽. Установка под ключ.`,
+    url:         '/stolik-i-skameyka',
+    images:      [{ url: '/img/stolik-skameyka.jpg', width: 1200, height: 800, alt: 'Столики и скамейки для кладбища — УралМетСтрой' }],
+  },
 };
 
 const STOLIKI   = PRODUCTS.filter(p => p.slug.startsWith('stolik'));
