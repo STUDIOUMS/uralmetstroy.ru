@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#2d2d2d"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#333" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#grid)" opacity="0.4"/>
+
+  <!-- Рамка -->
+  <rect x="30" y="30" width="1140" height="840" fill="none" stroke="#b45309" stroke-width="2" rx="4"/>
+  <rect x="40" y="40" width="1120" height="820" fill="none" stroke="#b45309" stroke-width="0.5" rx="2"/>
+
+  <!-- Угловые элементы (имитация ковки) -->
+  <g stroke="#b45309" stroke-width="1.5" fill="none">
+    <!-- Верх-лево -->
+    <path d="M 30 80 Q 55 55 80 30"/>
+    <circle cx="55" cy="55" r="6"/>
+    <circle cx="55" cy="55" r="3" fill="#b45309"/>
+    <!-- Верх-право -->
+    <path d="M 1170 80 Q 1145 55 1120 30"/>
+    <circle cx="1145" cy="55" r="6"/>
+    <circle cx="1145" cy="55" r="3" fill="#b45309"/>
+    <!-- Низ-лево -->
+    <path d="M 30 820 Q 55 845 80 870"/>
+    <circle cx="55" cy="845" r="6"/>
+    <circle cx="55" cy="845" r="3" fill="#b45309"/>
+    <!-- Низ-право -->
+    <path d="M 1170 820 Q 1145 845 1120 870"/>
+    <circle cx="1145" cy="845" r="6"/>
+    <circle cx="1145" cy="845" r="3" fill="#b45309"/>
+  </g>
+
+  <!-- Центральный орнамент (решётка оградки) -->
+  <g stroke="#555" stroke-width="1" fill="none" opacity="0.6">
+    <!-- Вертикальные прутья -->
+    <line x1="360" y1="200" x2="360" y2="680"/><line x1="400" y1="200" x2="400" y2="680"/><line x1="440" y1="200" x2="440" y2="680"/><line x1="480" y1="200" x2="480" y2="680"/><line x1="520" y1="200" x2="520" y2="680"/><line x1="560" y1="200" x2="560" y2="680"/><line x1="600" y1="200" x2="600" y2="680"/><line x1="640" y1="200" x2="640" y2="680"/><line x1="680" y1="200" x2="680" y2="680"/><line x1="720" y1="200" x2="720" y2="680"/><line x1="760" y1="200" x2="760" y2="680"/><line x1="800" y1="200" x2="800" y2="680"/><line x1="840" y1="200" x2="840" y2="680"/>
+    <!-- Горизонтальные перекладины -->
+    <line x1="340" y1="220" x2="860" y2="220"/>
+    <line x1="340" y1="380" x2="860" y2="380"/>
+    <line x1="340" y1="540" x2="860" y2="540"/>
+    <line x1="340" y1="660" x2="860" y2="660"/>
+    <!-- Основание -->
+    <line x1="320" y1="680" x2="880" y2="680"/>
+    <line x1="320" y1="200" x2="880" y2="200"/>
+    <!-- Столбики -->
+    <rect x="320" y="190" width="10" height="510" fill="#555"/>
+    <rect x="870" y="190" width="10" height="510" fill="#555"/>
+  </g>
+
+  <!-- Пики на прутьях -->
+  <g fill="#b45309" opacity="0.8">
+    <polygon points="360,185 354,205 366,205"/><polygon points="400,185 394,205 406,205"/><polygon points="440,185 434,205 446,205"/><polygon points="480,185 474,205 486,205"/><polygon points="520,185 514,205 526,205"/><polygon points="560,185 554,205 566,205"/><polygon points="600,185 594,205 606,205"/><polygon points="640,185 634,205 646,205"/><polygon points="680,185 674,205 686,205"/><polygon points="720,185 714,205 726,205"/><polygon points="760,185 754,205 766,205"/><polygon points="800,185 794,205 806,205"/><polygon points="840,185 834,205 846,205"/>
+  </g>
+
+  <!-- Завитки на пересечениях -->
+  <g stroke="#b45309" stroke-width="1" fill="none" opacity="0.5">
+    <circle cx="360" cy="380" r="5"/><circle cx="440" cy="380" r="5"/><circle cx="520" cy="380" r="5"/><circle cx="600" cy="380" r="5"/><circle cx="680" cy="380" r="5"/><circle cx="760" cy="380" r="5"/><circle cx="840" cy="380" r="5"/>
+    <circle cx="400" cy="540" r="5"/><circle cx="480" cy="540" r="5"/><circle cx="560" cy="540" r="5"/><circle cx="640" cy="540" r="5"/><circle cx="720" cy="540" r="5"/><circle cx="800" cy="540" r="5"/>
+  </g>
+
+  <!-- Логотип -->
+  <text x="600" y="110" font-family="Georgia, serif" font-size="22" fill="#b45309"
+        text-anchor="middle" letter-spacing="4">УралМетСтрой</text>
+  <line x1="440" y1="120" x2="560" y2="120" stroke="#b45309" stroke-width="0.8"/>
+  <line x1="640" y1="120" x2="760" y2="120" stroke="#b45309" stroke-width="0.8"/>
+
+  <!-- Название товара -->
+  <text x="600" y="762" font-family="Georgia, serif" font-size="38" fill="#ffffff"
+        text-anchor="middle" font-weight="bold">Оградка</text>
+  <text x="600" y="806" font-family="Georgia, serif" font-size="38" fill="#ffffff"
+        text-anchor="middle" font-weight="bold">«Простая»</text>
+
+  <!-- Цена -->
+  <rect x="470" y="830" width="260" height="40" rx="4" fill="#b45309"/>
+  <text x="600" y="857" font-family="Arial, sans-serif" font-size="20" fill="#ffffff"
+        text-anchor="middle" font-weight="bold">от 9 500 ₽</text>
+</svg>
