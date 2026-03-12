@@ -10,6 +10,7 @@ interface Slide {
   sub:    string;
   badges: string[];
   btns:   Array<{ label: string; href: string; primary?: boolean }>;
+  bg:     string;
 }
 
 const SLIDES: Slide[] = [
@@ -22,6 +23,7 @@ const SLIDES: Slide[] = [
       { label: 'Рассчитать стоимость', href: '#order',   primary: true },
       { label: 'Каталог оградок',      href: '/catalog' },
     ],
+    bg: '/img/slide1.jpg',
   },
   {
     tag:    'Установка на любом кладбище Нижнего Тагила',
@@ -32,6 +34,7 @@ const SLIDES: Slide[] = [
       { label: 'Подробнее об установке', href: '/ustanovka', primary: true },
       { label: 'Позвонить',              href: SITE.phoneTel },
     ],
+    bg: '/img/slide2.jpg',
   },
   {
     tag:    'Акция · до конца месяца',
@@ -42,6 +45,7 @@ const SLIDES: Slide[] = [
       { label: 'Узнать подробнее', href: '/catalog#kovanye', primary: true },
       { label: 'Смотреть модели',  href: '/catalog' },
     ],
+    bg: '/img/slide3.jpg',
   },
 ];
 
@@ -78,7 +82,28 @@ export default function HeroSlider() {
       onTouchEnd={onTouchEnd}
       aria-label="Главный слайдер"
     >
-      <div className="container">
+      {/* Фоновые фото — crossfade при смене слайда */}
+      {SLIDES.map((s, i) => (
+        <div
+          key={i}
+          aria-hidden="true"
+          style={{
+            position: 'absolute', top: 0, right: 0, bottom: 0, left: 0,
+            backgroundImage: `url('${s.bg}')`,
+            backgroundSize: 'cover', backgroundPosition: 'center',
+            opacity: i === current ? 1 : 0,
+            transition: 'opacity 0.9s ease',
+          }}
+        />
+      ))}
+      {/* Затемняющий градиент */}
+      <div aria-hidden="true" style={{
+        position: 'absolute', top: 0, right: 0, bottom: 0, left: 0,
+        background: 'linear-gradient(160deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.45) 100%)',
+        pointerEvents: 'none',
+      }}/>
+
+      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div className="hero-content">
           <div className="hero-text">
             <p className="hero-tag">{slide.tag}</p>
