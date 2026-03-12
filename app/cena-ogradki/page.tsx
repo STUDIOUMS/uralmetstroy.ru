@@ -60,7 +60,7 @@ export default function CenaPage() {
       <Breadcrumb items={BREADCRUMB_ITEMS} />
 
       {/* PAGE HERO */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/img/ogrady.jpg')" }}>
         <div className="container">
           <h1>Цены на оградки и услуги 2026</h1>
           <p className="hero-desc">

@@ -28,7 +28,7 @@ export default function StolikPage() {
     <>
       <Breadcrumb items={[{ label: 'Главная', href: '/' }, { label: 'Столики и скамейки' }]}/>
 
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/img/stolik-skameyka.jpg')" }}>
         <div className="container">
           <h1>Столики, скамейки и лавочки для кладбища</h1>
           <p className="hero-desc">

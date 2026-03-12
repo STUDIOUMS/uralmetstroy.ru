@@ -90,7 +90,7 @@ export default function DostavkaPage() {
       <Breadcrumb items={BREADCRUMB_ITEMS} />
 
       {/* HERO */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/img/slide2.jpg')" }}>
         <div className="container">
           <h1>Доставка и оплата</h1>
           <p className="hero-desc">

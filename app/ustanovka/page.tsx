@@ -80,7 +80,7 @@ export default function UstanovkaPage() {
       <Breadcrumb items={BREADCRUMB_ITEMS} />
 
       {/* PAGE HERO */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/img/slide1.jpg')" }}>
         <div className="container">
           <h1>Установка оградок на кладбище</h1>
           <p className="hero-desc">

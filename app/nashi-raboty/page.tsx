@@ -108,7 +108,7 @@ export default function NashiRabotyPage() {
 
       <Breadcrumb items={[{ label: 'Главная', href: '/' }, { label: 'Наши работы' }]}/>
 
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/img/ogrady.jpg')" }}>
         <div className="container">
           <h1>Наши работы</h1>
           <p className="hero-desc">

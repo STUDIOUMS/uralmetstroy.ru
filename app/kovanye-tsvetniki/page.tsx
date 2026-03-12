@@ -51,7 +51,7 @@ export default function KovanyeTsvetnikPage() {
     <>
       <Breadcrumb items={[{ label: 'Главная', href: '/' }, { label: 'Каталог', href: '/ritualnye-izdeliya' }, { label: 'Кованые цветники' }]}/>
 
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/img/ritual-ogrady.jpg')" }}>
         <div className="container">
           <h1>Кованые цветники для могилы</h1>
           <p className="hero-desc">10 моделей: круглые, прямоугольные, с орнаментом, двойные. Собственное производство.</p>

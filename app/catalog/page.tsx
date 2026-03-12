@@ -34,7 +34,7 @@ export default function CatalogPage() {
       <Breadcrumb items={[{ label: 'Главная', href: '/' }, { label: 'Каталог оградок' }]}/>
 
       {/* Hero */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/img/ogrady.jpg')" }}>
         <div className="container">
           <h1>Каталог оградок на могилу</h1>
           <p className="hero-desc">Кованые и сварные оградки собственного производства. {PRODUCTS.filter(p=>p.category==='ogradki').length}+ моделей от 8 000 ₽. Установка по всем кладбищам Нижнего Тагила.</p>

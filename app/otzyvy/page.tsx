@@ -128,7 +128,7 @@ export default function OtzyyvyPage() {
       <Breadcrumb items={BREADCRUMB_ITEMS} />
 
       {/* PAGE HERO */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/img/ogrady.jpg')" }}>
         <div className="container">
           <h1>Отзывы клиентов — 4.9★</h1>
           <p className="hero-desc">

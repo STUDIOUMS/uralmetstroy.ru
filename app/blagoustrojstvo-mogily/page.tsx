@@ -72,7 +72,7 @@ export default function BlagoustrojstvoPage() {
       <Breadcrumb items={BREADCRUMB_ITEMS} />
 
       {/* PAGE HERO */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/img/slide3.jpg')" }}>
         <div className="container">
           <h1>Благоустройство могил</h1>
           <p className="hero-desc">

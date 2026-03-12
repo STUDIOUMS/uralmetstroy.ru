@@ -72,7 +72,7 @@ export default function OKompaniiPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }}/>
       <Breadcrumb items={[{ label: 'Главная', href: '/' }, { label: 'О компании' }]}/>
 
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/img/slide1.jpg')" }}>
         <div className="container">
           <h1>О компании {SITE.name}</h1>
           <p className="hero-desc">Производство кованых и сварных ритуальных изделий с {SITE.workingFrom} года</p>

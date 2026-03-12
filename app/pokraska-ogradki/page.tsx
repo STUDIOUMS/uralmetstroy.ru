@@ -72,7 +72,7 @@ export default function PokraskaPage() {
       <Breadcrumb items={BREADCRUMB_ITEMS} />
 
       {/* PAGE HERO */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/img/slide2.jpg')" }}>
         <div className="container">
           <h1>Покраска оградок на кладбище</h1>
           <p className="hero-desc">

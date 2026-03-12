@@ -51,7 +51,7 @@ export default function MetallPamyatnikiPage() {
     <>
       <Breadcrumb items={[{ label: 'Главная', href: '/' }, { label: 'Каталог', href: '/ritualnye-izdeliya' }, { label: 'Металлические памятники' }]}/>
 
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/img/pamyatnik-1.jpg')" }}>
         <div className="container">
           <h1>Металлические памятники на могилу</h1>
           <p className="hero-desc">10 моделей: стелы, с гравировкой, с фотоовалом, двойные, православные. Установка за 1 день.</p>
